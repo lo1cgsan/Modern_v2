@@ -1,0 +1,262 @@
+@media (max-width: 1200px) {
+
+	.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		background: #fff;
+		padding: 8px 5px 6px 5px;
+	}
+
+	.navbar-default .navbar-toggle i {
+		color: #bbb;
+		font-size: 2em;
+	}
+
+	.quote-buttons span {
+		margin: 0 2px;
+	}
+
+	.subscribe-widget form input[type="text"] {
+		margin-bottom: 10px;
+	}
+/*rb*/
+	#main-slide .slider-content {
+		margin-top: 0;
+		top: 35px;
+	}
+	.slider.btn{
+		padding: 5px 25px;
+		margin-top: 25px;
+		font-size: 16px;
+	}
+	.post-row { min-height: 100px !important; }
+}
+
+@media (max-width: 991px) {
+
+	#content { padding: 20px 0 0 0; }
+
+	.tp-caption a.btn-system {
+		font-size: 11px;
+		padding: 4px 8px;
+	}
+
+	.copyright-section {
+		text-align: center;
+	}
+
+	ul.footer-nav {
+		display: block;
+		float: none !important;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	ul.footer-nav li {
+		display: inline-block;
+		float: none;
+		margin-left: 15px;
+	}
+
+	.page-banner {
+		text-align: center;
+	}
+
+	ul.breadcrumbs {
+		float: none;
+	}
+
+	ul.breadcrumbs li {
+		float: none;
+		display: inline-block;
+		float: left;
+	}
+
+	.right-sidebar {
+		margin-top: 60px;
+		padding-top: 60px;
+		border-top: 1px solid #eee;
+	}
+	.hidere {
+		display: none !important;
+	}
+
+	.top-bar .contact-details li a:before {
+		content: "" !important;
+		display: inline;
+	}
+	.cd{
+		font-size: 10px !important;
+		display: inline-block;
+		float: left !important;
+	}
+
+	.img-cert { max-height: 100px !important; }
+
+}
+
+@media only screen and (max-width: 479px) {
+
+	.show-search, .search-form {
+		display: none;
+	}
+
+    ul.social-list li {
+		margin: 0 3px;
+	}
+
+	ul.social-list li a i {
+		font-size: 0.9em;
+		display: block;
+		width: auto;
+		line-height: 30px;
+		border: none!important;
+	}
+
+	ul.social-list li a:hover {
+		background-color: transparent!important;
+	}
+
+	ul.social-list li a.facebook:hover {
+		color: #507CBE;
+	}
+
+	.navbar-default .navbar-toggle {
+		margin-top: 15px;
+		outline: none;
+	}
+
+	.navbar-default .navbar-nav > li > a {
+		border: none;
+		padding: 5px 10px;
+		display: block;
+		border: none !important;
+		padding-right: 0;
+	}
+
+
+	.navbar-default .navbar-nav > li > a:after {
+		display: none;
+	}
+
+	.navbar-default .navbar-nav > li > a:hover {
+		opacity: 0.7;
+	}
+
+    .navbar-default .navbar-nav > li {
+		margin-left: 0;
+		display: block;
+		margin-bottom: 5px;
+        width: 100%
+	}
+
+
+    .btn-system {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (min-width : 992px) {
+  #main-slide .slider-content h2{
+		font-size: 58px;
+		margin-bottom: 40px;
+	}
+	#main-slide .carousel-indicators {
+  	bottom: 10%;
+	}
+}
+
+@media (min-width : 768px) and (max-width: 991px) {
+
+	#main-slide .slider-content {
+		margin-top: 0;
+		top: 25px;
+	}
+
+	#main-slide .slider-content h2{
+		font-size: 48px;
+	}
+	#main-slide .slider-content h3{
+		font-size: 24px;
+		margin-top: 15px;
+	}
+	.slider.btn{
+		padding: 5px 25px;
+		margin-top: 13px;
+		font-size: 16px;
+	}
+  #main-slide .carousel-indicators {
+  	bottom: 3%;
+	}
+}
+
+@media(max-width: 1050px){
+	.navbar-default .navbar-nav > li > a {
+		padding: 28px 15px 28px 5px;
+	}
+	.container{
+		width: 100% !important;
+	}
+}
+
+@media (max-width : 767px) {
+
+		#main-slide .slider-content {
+			margin-top: 0;
+			top: 10%;
+		}
+
+    #main-slide .slider-content h2{
+		font-size: 28px;
+		line-height: normal;
+		margin-bottom: 0;
+	}
+	#main-slide .slider-content h3{
+		font-size: 14px;
+		margin-top: 5px;
+	}
+	.slider.btn{
+		padding: 0 15px;
+		margin-top: 10px;
+		font-size: 12px;
+	}
+	#main-slide .carousel-indicators{
+		display: none;
+	}
+
+}
+
+@media(max-width: 650px){
+	.rm{
+		display: none !important;
+	}
+}
+
+@media (max-width : 590px) {
+		#main-slide .slider-content {
+			margin-top: 0;
+			top: 5%;
+		}
+}
+@media (max-width : 479px) {
+
+  #main-slide .slider-content{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	.navbar-toggle{
+	    display: none;
+	  }
+}
+
+/*rb*/
+@media screen and (max-width: 360px) {
+	.top-bar { line-height: 1.5em; }
+	.contact-details li span::before { display: none; }
+  .logoo {
+		font-size: 18px;
+	}
+	#main-slide { display: none; }
+}
