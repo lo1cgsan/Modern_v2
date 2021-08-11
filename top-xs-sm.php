@@ -6,9 +6,9 @@
 * @Action:    Modern Theme for the GetSimple 3.x
 *
 *****************************************************/
-?><div class="container visible-sm visible-xs top-xs">
+?><div class="container d-md-none top-xs">
   <div class="row">
-    <div class="col-sm-4 visible-sm">
+    <div class="col-sm-4 .d-none .d-sm-block .d-md-none">
       <p>&nbsp;</p>
     </div>
   	<div class="col-xs-6 col-sm-4">
@@ -31,7 +31,7 @@ foreach ($kategorie as $kat => $dane) {
     </div>
   </div>
 
-  <div class="row visible-xs visible-sm">
+  <div class="row d-md-none">
     <div class="col-xs-12">
       <div class="top-linki text-center">
 		<a class="btn-system btn-mini" href="http://lo1.sandomierz.pl/planlekcji">Plan lekcji</a>

@@ -28,7 +28,7 @@ foreach ($paths as $path) {
 ?>
         </ul>
       </div>
-      <div class="col-sm-4 hidden-xs">
+      <div class="col-sm-4 .d-none .d-sm-block">
 <?php include("certyfikaty_banner.php"); ?>
       </div>
     </div>
