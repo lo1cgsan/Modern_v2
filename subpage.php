@@ -63,6 +63,7 @@ foreach($submenu as $strona) {
 
 </div><!-- end/container -->
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+  <script type="text/javascript" src="<?php get_theme_url(); ?>/js/owl.carousel.min.js"></script>
   <script type="text/javascript" src="<?php get_theme_url(); ?>/js/script.js"></script>
   <script type="text/javascript" src="<?php get_theme_url(); ?>/js/faq.js"></script>
 </body>

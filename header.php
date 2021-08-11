@@ -37,6 +37,8 @@
   <!-- stick navbar -->
   <!-- <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/css/slicknav.css" media="screen"> -->
   <!-- styl strony bez kolorów  -->
+  <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/css/owl.carousel.min.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/css/owl.theme.default.min.css" media="screen">
   <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/css/style.css" media="screen">
   <!-- responsywnosc  -->
   <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/css/responsive.css" media="screen">

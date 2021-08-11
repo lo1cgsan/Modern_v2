@@ -8,11 +8,11 @@
 *****************************************************/
 ?>
       <div class="widget banner">
-          <div class="certyfikaty-carousel custom-carousel touch-carousel" data-appeared-items="4">
+          <div class="certyfikaty-carousel owl-carousel owl-theme">
 <?php
 $dane = get_dane('certyfikaty.xml');
 foreach ($dane as $i => $img) {
-  echo '<div class="cert-item item">';
+  echo '<div class="item">';
   echo '<a href="'.$img['img'].'"><img class="img-responsive img-cert-banner" src="'.$img['img'].'" alt="'.$img['title'].'" /></a>';
   echo '</div>';
 }
