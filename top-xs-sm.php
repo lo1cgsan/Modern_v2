@@ -8,32 +8,17 @@
 *****************************************************/
 ?><div class="container d-md-none top-xs">
   <div class="row">
-    <div class="col-sm-4 .d-none .d-sm-block .d-md-none">
-      <p>&nbsp;</p>
-    </div>
-  	<div class="col-xs-6 col-sm-4">
-			<div class="btn-group pull-right" role="group">
-	    	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie<i class="fa fa-angle-down"></i></button>
-	    	<ul class="dropdown-menu">
-<?php
-foreach ($kategorie as $kat => $dane) {
-  echo '<li><a href="'.get_site_url(false).'?addTags='.$kat.'">'.$dane[0].' <i class="fa fa-angle-right"></i></a></li>';
-}
-?>
-	      </ul>
-	    </div>
+  	<div class="col-6">
+      <?php include("kategorie.php"); ?>
   	</div>
-    <div class="col-xs-6 col-sm-4 widget-search">
-        <form class="search" method="get" action="<?php get_site_url(); ?>szukaj">
-          <input class="search-words" name="words" type="search" placeholder="Czego szukasz..." />
-          <button class="search-btn" name="search" type="submit"><i class="fa fa-search"></i></button>
-        </form>
+    <div class="col-6">
+      <?php include("searchform.php"); ?>
     </div>
   </div>
 
   <div class="row d-md-none">
     <div class="col-xs-12">
-      <div class="top-linki text-center">
+      <div class="text-center mt-3">
 		<a class="btn-system btn-mini" href="http://lo1.sandomierz.pl/planlekcji">Plan lekcji</a>
         <a class="btn-system btn-mini" href="http://lo1.sandomierz.pl/e-dziennik">E-dziennik</a>
 		<a class="btn-system btn-mini" href="http://lo1.sandomierz.pl/cgarch">Archiwum</a>

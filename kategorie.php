@@ -7,10 +7,9 @@
 *
 *****************************************************/
 ?>
-    <div class="widget widget-categories kategorie">
-      <!-- <h4>Kategorie <span class="head-line"></span></h4> -->
+    <div class="widget kategorie">
 		<div class="dropdown" role="group">
-    	<button id="rozwijalny" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie</button>
+    	<button id="rozwijalny" type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie</button>
     	<div class="dropdown-menu" aria-labelledby="rozwijalny">
 <?php
 foreach ($kategorie as $kat => $dane) {

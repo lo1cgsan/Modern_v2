@@ -8,10 +8,9 @@
 *****************************************************/
 ?><?php include("header.php"); ?>
 
-<div id="container">
-
 <?php include("menu.php"); ?>
 
+<main role="main">
 <?php include("banner.php"); ?>
 
 <?php include("top-xs-sm.php"); ?>
@@ -26,25 +25,22 @@
     </div><!-- /tresc -->
     <!-- start/sidebar -->
     <div class="col-md-3 sidebar right-sidebar">
-
-<?php include("searchform.php"); ?>
-
-<?php include("kategorie.php"); ?>
-
-<?php include("popularne.php") ?>
-
+      <div class="d-none d-md-block">
+        <?php include("searchform.php"); ?>
+        <?php include("kategorie.php"); ?>
+      </div>
+      <?php include("popularne.php") ?>
     </div><!-- end/sidebar -->
 
   </div><!-- end/row -->
 </div><!-- end/container -->
 </div><!-- end/content -->
+</main>
 
 <?php include("footer.php"); ?>
 
-</div><!-- end/container -->
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
   <script type="text/javascript" src="<?php get_theme_url(); ?>/js/owl.carousel.min.js"></script>
   <script type="text/javascript" src="<?php get_theme_url(); ?>/js/script.js"></script>
-  <script type="text/javascript" src="<?php get_theme_url(); ?>/js/faq.js"></script>
 </body>
 </html>

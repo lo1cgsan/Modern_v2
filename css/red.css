@@ -16,6 +16,22 @@ nav .navbar-nav > li > a.active {
 	color: #ee3733;
 }
 
+.navbar-toggler {
+	border-color: #ee3733;
+}
+
+.navbar-toggler .fa.fa-bars {
+	color: #ee3733;
+}
+
+.navbar-toggler:hover {
+	border-color: #ee3733;
+	background-color: #ee3733;
+}
+.navbar-toggler:hover .fa.fa-bars {
+	color: #fff;
+}
+
 .dropdown > li:hover > a, .sup-dropdown li:hover > a {
 	color: #ee3733;
 }
@@ -124,6 +140,9 @@ ul.post-meta li a:hover {
 	background-color: #ee3733;
 }
 
+.widget.kategorie .btn-default:hover { background-color: #ee3733; color: #fff; }
+.widget.kategorie .btn-default:focus { background-color: #ee3733; color: #fff; }
+
 .sidebar .tagcloud a:hover {
     background-color: #ee3733;
 }
@@ -132,11 +151,7 @@ ul.post-meta li a:hover {
     background-color: #ee3733;
 }
 
-.touch-slider .owl-controls.clickable .owl-buttons div:hover {
-	background-color: #ee3733;
-}
-
-.touch-carousel .owl-controls.clickable .owl-buttons div:hover {
+.owl-theme .owl-nav [class*="owl-"]:hover {
 	background-color: #ee3733;
 }
 
@@ -150,7 +165,7 @@ ul.post-meta li a:hover {
     color: #ee3733;
 }
 
-#main-slide .carousel-control i:hover{
+#main-slide .carousel-control-prev i:hover,#main-slide .carousel-control-next i:hover{
 	background: #ee3733;
 }
 .slider.btn {

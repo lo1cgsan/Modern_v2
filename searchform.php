@@ -10,6 +10,6 @@
       <div class="widget widget-search">
         <form class="search" method="get" action="<?php get_site_url(); ?>szukaj">
           <input class="search-words" name="words" type="search" placeholder="Czego szukasz..." />
-          <button class="search-btn" name="search" type="submit"><i class="fa fa-search"></i></button>
+          <button class="search-btn" name="search" type="submit" aria-label="Wyszukaj"><i class="fa fa-search" aria-hidden="true"></i></button>
         </form>
       </div>

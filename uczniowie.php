@@ -3,15 +3,14 @@
 *
 * @File:      template.php
 * @Package:   wDesign
-* @Action:    Modern Theme for the GetSimple 3.x
+* @Action:    Modern Theme v2 for the GetSimple 3.x
 *
 *****************************************************/
 ?><?php include("header.php"); ?>
 
-<div id="container">
-
 <?php include("menu.php"); ?>
 
+<main role="main">
 <?php include("banner.php"); ?>
 
 <?php include("top-xs-sm.php"); ?>
@@ -99,13 +98,9 @@ foreach ($pliki as $nr => $plik) {
   </div><!-- end/row -->
 </div><!-- end/container -->
 </div><!-- end/content -->
+</main>
 
 <?php include("footer.php"); ?>
 
-</div><!-- end/container -->
-  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
-  <script type="text/javascript" src="<?php get_theme_url(); ?>/js/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="<?php get_theme_url(); ?>/js/script.js"></script>
-  <script type="text/javascript" src="<?php get_theme_url(); ?>/js/faq.js"></script>
 </body>
 </html>

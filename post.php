@@ -3,7 +3,7 @@
 *
 * @File:      template.php
 * @Package:   wDesign
-* @Action:    Modern Theme for the GetSimple 3.x
+* @Action:    Modern Theme v2 for the GetSimple 3.x
 *
 *****************************************************/
 ?><?php include("header.php"); ?>
@@ -18,7 +18,7 @@
 <div id="content">
   <div class="container">
     <div class="row">
-      <div class="col-md-9">
+      <div class="col-md-9 tresc">
 
         <div class="blog-post">
         <div class="post-content">
@@ -49,8 +49,10 @@ $year = substr($data, 6, 4);
     </div><!-- end/col-md-9 -->
       <!-- start/sidebar -->
     <div class="col-md-3 sidebar right-sidebar">
-      <?php include("searchform.php"); ?>
-      <?php include("kategorie.php"); ?>
+      <div class="d-none d-md-block">
+        <?php include("searchform.php"); ?>
+        <?php include("kategorie.php"); ?>
+      </div>
       <?php include("popularne.php") ?>
     </div><!-- end/sidebar -->
 
@@ -60,10 +62,6 @@ $year = substr($data, 6, 4);
 </main>
 
 <?php include("footer.php"); ?>
-
-  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
-  <script type="text/javascript" src="<?php get_theme_url(); ?>/js/script.js"></script>
-  <script type="text/javascript" src="<?php get_theme_url(); ?>/js/faq.js"></script>
 
 </body>
 </html>

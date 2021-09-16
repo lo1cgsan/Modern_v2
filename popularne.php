@@ -6,7 +6,7 @@
 * @Action:    Modern Theme for the GetSimple 3.x
 *
 *****************************************************/
-?>      <div class="widget widget-popular-posts hidere">
+?>    <div class="widget widget-popular-posts d-none d-md-block">
         <h4>Na skróty<span class="head-line"></span></h4>
         <ul>
           <li>

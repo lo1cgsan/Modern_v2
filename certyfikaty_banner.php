@@ -7,15 +7,19 @@
 *
 *****************************************************/
 ?>
-      <div class="widget banner">
-          <div class="certyfikaty-carousel owl-carousel owl-theme">
+        <div class="certyfikaty-carousel owl-carousel owl-theme">
 <?php
 $dane = get_dane('certyfikaty.xml');
 foreach ($dane as $i => $img) {
-  echo '<div class="item">';
-  echo '<a href="'.$img['img'].'"><img class="img-responsive img-cert-banner" src="'.$img['img'].'" alt="'.$img['title'].'" /></a>';
+  $imgname = pathinfo($img['img'], PATHINFO_FILENAME);
+  if (file_exists(GSDATAUPLOADPATH.'dyplomy/'.$imgname.'.jpg'))
+    $imgbig = $imgname.'.jpg';
+  else
+    $imgbig = $imgname.'.png';
+  $imgpath = get_site_url(false).'data/uploads/dyplomy/'.$imgbig;
+  echo '<div class="cert-item">';
+  echo '<a href="'.$imgpath.'"><img src="'.$img['img'].'" alt="'.$img['title'].'" /></a>';
   echo '</div>';
 }
 ?>
-        </div>
-      </div><!-- end/widget -->
+        </div> <!-- end of certyfikaty -->

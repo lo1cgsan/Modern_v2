@@ -3,7 +3,7 @@
 *
 * @File:      header.php
 * @Package:   wDesign
-* @Action:    Modern Theme for the GetSimple 3.x
+* @Action:    Modern Theme v2 for the GetSimple 3.x
 *
 *****************************************************/
 ?><!DOCTYPE html>
@@ -28,35 +28,17 @@
 
   <meta name="Robots" content="all" />
 
-  <!-- Bootstrap CSS  -->
-  <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="<?php get_theme_url(); ?>/assets/css/bootstrap.min.css" type="text/css" media="screen"> -->
-  <!-- Font Awesome CSS -->
+  <!-- CSS: Bootstrap, Font Awesome, OWL Carousel, Animate  -->
+  <link rel="stylesheet" href="<?php get_theme_url(); ?>/assets/css/bootstrap.min.css" type="text/css" media="screen">
   <link rel="stylesheet" href="<?php get_theme_url(); ?>/assets/font-awesome/css/font-awesome.min.css" type="text/css" media="screen">
-  <!-- stick navbar -->
-  <!-- <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/css/slicknav.css" media="screen"> -->
-  <!-- styl strony bez kolorów  -->
-  <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/css/owl.carousel.min.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/css/owl.theme.default.min.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/css/style.css" media="screen">
-  <!-- responsywnosc  -->
-  <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/css/responsive.css" media="screen">
-  <!--animacje/transitions  -->
-  <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/css/animate.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/css/red.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/css/lo1cg.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/assets/css/owl.carousel.min.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/assets/css/owl.theme.default.min.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/assets/css/animate.css" media="screen">
 
-  <!-- potrzebne & funkcjonalność na starszych wersjach  -->
-  <script type="text/javascript" src="<?php get_theme_url(); ?>/js/jquery-3.6.0.min.js"></script>
-  <!-- <script type="text/javascript" src="<?php get_theme_url(); ?>/js/jquery.migrate.js"></script> -->
-  <!-- <script type="text/javascript" src="<?php get_theme_url(); ?>/js/modernizrr.js"></script> -->
-  <!-- <script type="text/javascript" src="<?php get_theme_url(); ?>/assets/js/bootstrap.bundle.min.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-  <!-- slider & scrolling -->
-  <!-- <script type="text/javascript" src="<?php get_theme_url(); ?>/js/owl.carousel.min.js"></script> -->
-  <!-- <script type="text/javascript" src="<?php get_theme_url(); ?>/js/jquery.nicescroll.min.js"></script> -->
-  <!-- <script type="text/javascript" src="<?php get_theme_url(); ?>/js/jquery.slicknav.js"></script> -->
+  <!-- CSS: podstawowe, responsywność, temat czerwony  -->
+  <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/css/style.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/css/responsive.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/css/red.css" media="screen" />
 
   <link rel="icon" type="image/png" href="<?php get_theme_url(); ?>/images/favicon.png">
 <!--

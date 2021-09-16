@@ -3,7 +3,7 @@
 *
 * @File:      news.php
 * @Package:   wDesign
-* @Action:    Modern Theme for the GetSimple 3.x
+* @Action:    Modern Theme v2 for the GetSimple 3.x
 *
 *****************************************************/
 ?><?php include("header.php"); ?>
@@ -12,7 +12,7 @@
 
 <main role="main">
 <?php include("slider.php"); ?>
-
+<?php include("top-xs-sm.php"); ?>
 <div id="content">
   <div class="container">
     <div class="row">
@@ -25,7 +25,7 @@
 $addTags='';
 if (isset($_GET['addTags']))
   $addTags = trim($_GET['addTags']);
-get_i18n_search_results(array('tags'=>'news202021','addTags'=>$addTags,'words'=>'','max'=>10,'numWords'=>15,'HEADER'=>null, 'live'=>0, 'ajax'=>0, 'showPaging'=>1));
+get_i18n_search_results(array('tags'=>'news202122','addTags'=>$addTags,'words'=>'','max'=>10,'numWords'=>15,'HEADER'=>null, 'live'=>0, 'ajax'=>0, 'showPaging'=>1));
 //get_page_content();
 ?>
       </div><!-- end/row latest-posts-classic -->
@@ -33,10 +33,14 @@ get_i18n_search_results(array('tags'=>'news202021','addTags'=>$addTags,'words'=>
 
       <!-- panel boczny, znika przy szerokosci < ok 900px -->
       <div class="col-md-3 sidebar right-sidebar">
-        <?php include("searchform.php"); ?>
-        <?php include("kategorie.php"); ?>
+        <div class="d-none d-md-block">
+          <?php include("searchform.php"); ?>
+          <?php include("kategorie.php"); ?>
+        </div>
         <?php include("popularne.php") ?>
-        <?php // include("certyfikaty.php"); ?>
+
+        <h4 class="d-none d-md-block">Certyfikaty<span class="head-line"></span></h4>
+        <?php include("certyfikaty_banner.php"); ?>
       </div><!-- end/sidebar -->
 
     </div><!-- end/row -->
@@ -45,10 +49,6 @@ get_i18n_search_results(array('tags'=>'news202021','addTags'=>$addTags,'words'=>
 </main>
 
 <?php include("footer.php"); ?>
-
-  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
-  <script type="text/javascript" src="<?php get_theme_url(); ?>/js/script.js"></script>
-  <script type="text/javascript" src="<?php get_theme_url(); ?>/js/faq.js"></script>
 
 </body>
 </html>

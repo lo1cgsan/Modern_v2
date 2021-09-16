@@ -1,4 +1,22 @@
 // różne deklaracje pluginów
+function owlInitialize() {
+	if ($(window).width() < 768) {
+    	$('div.certyfikaty-carousel').owlCarousel('destroy');
+   	}else{
+   	  	var $owl = $('.owl-carousel').owlCarousel({
+			autoplay:false,
+	    	loop:false,
+	    	margin:15,
+	    	nav:true,
+	    	navText:['<i class="fa fa-angle-left" aria-label="Poprzedni"></i>','<i class="fa fa-angle-right" aria-label="Następny"></i>'],
+	    	dots:false,
+	    	items:4,
+	    	autoWidth:true
+	  	});
+      	$('div.certyfikaty-carousel').owlCarousel();
+   	}
+}
+
 $(document).ready(function ($) {
 	"use strict";
 	// var headerEle = function () {
@@ -115,70 +133,28 @@ $(document).ready(function ($) {
 	$(".post-row:odd").css("clear", "right");
 	$(".post-content img").addClass("img-thumbnail");
 
+	$(".faq .faq-item .faq-title").click(function(){
+        var item = $(this).parent('.faq-item');
+        var item2 = $(this).find('.fa');
+
+        if(item.hasClass("active")) {
+        	if (!item2.hasClass("fa-angle-right")) {
+            item2.removeClass("fa-angle-up").addClass("fa-angle-down");
+            item.toggleClass("active");
+          }
+        } else {
+        	if (!item2.hasClass("fa-angle-right")) {
+            item2.removeClass("fa-angle-down").addClass("fa-angle-up");
+            item.toggleClass("active");
+          }
+        }
+        // onresize(300);
+    });
+
+	owlInitialize();
+
 });
 
-// $('.wpb-mobile-menu').slicknav({
-//   prependTo: '.navbar-header',
-//   allowParentLinks: true,
-//   duplicate: false,
-//   label: '',
-//   closedSymbol: '<i class="fa fa-angle-right"></i>',
-//   openedSymbol: '<i class="fa fa-angle-down"></i>',
-// });
-
-// $('.custom-carousel').each(function(){
-// 		var owl = jQuery(this),
-// 			itemsNum = $(this).attr('data-appeared-items'),
-// 			sliderNavigation = $(this).attr('data-navigation');
-
-// 		if ( sliderNavigation == 'false' || sliderNavigation == '0' ) {
-// 			var returnSliderNavigation = false
-// 		}else {
-// 			var returnSliderNavigation = true
-// 		}
-// 		if( itemsNum == 1) {
-// 			var deskitemsNum = 1;
-// 			var desksmallitemsNum = 1;
-// 			var tabletitemsNum = 1;
-// 		}
-// 		else if (itemsNum >= 2 && itemsNum < 4) {
-// 			var deskitemsNum = itemsNum;
-// 			var desksmallitemsNum = itemsNum - 1;
-// 			var tabletitemsNum = itemsNum - 1;
-// 		}
-// 		else if (itemsNum >= 4 && itemsNum < 8) {
-// 			var deskitemsNum = itemsNum -1;
-// 			var desksmallitemsNum = itemsNum - 2;
-// 			var tabletitemsNum = itemsNum - 3;
-// 		}
-// 		else {
-// 			var deskitemsNum = itemsNum -3;
-// 			var desksmallitemsNum = itemsNum - 6;
-// 			var tabletitemsNum = itemsNum - 8;
-// 		}
-// 		owl.owlCarousel({
-// 			slideSpeed : 300,
-// 			stopOnHover: true,
-// 			autoPlay: false,
-// 			navigation : returnSliderNavigation,
-// 			pagination: false,
-// 			lazyLoad : true,
-// 			items : itemsNum,
-// 			itemsDesktop : [1000,deskitemsNum],
-// 			itemsDesktopSmall : [900,desksmallitemsNum],
-// 			itemsTablet: [600,tabletitemsNum],
-// 			itemsMobile : false,
-// 			transitionStyle : "goDown",
-// 		});
-// 	});
-
-$('.owl-carousel').owlCarousel({
-	autoplay:false,
-    loop:false,
-    margin:15,
-    nav:true,
-    navText:['<i class="fa fa-angle-left" aria-label="Poprzedni"></i>','<i class="fa fa-angle-right" aria-label="Następny"></i>'],
-    dots:false,
-    items:4,
-    autoWidth:true
+$(window).resize(function() {
+   owlInitialize();
 });
