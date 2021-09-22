@@ -710,6 +710,11 @@ input[type="submit"] {
 
 .widget-search .search-btn:hover { background-color: #444; }
 .search-no-results { font-size: 22px; font-weight: 400; text-align: center; }
+
+.tresc ul.search-results { list-style-type: none; }
+ul.search-results li.search-entry { margin-bottom: 1.5rem; }
+ul.search-results li.search-entry .search-entry-excerpt { margin-left: 55px; }
+
 .widget.kategorie { overflow: visible; }
 .widget.kategorie ul { padding-left: 10px; }
 .widget.kategorie .btn-default { background-color: #fff; border-color: #ccc; }
@@ -766,6 +771,7 @@ input[type="submit"] {
 
 .latest-posts-classic .post-content p {
 	font-size: 0.9rem;
+	font-weight: 400;
 }
 
 .latest-posts-classic .left-meta-post .post-date {
@@ -1064,11 +1070,6 @@ input[type="submit"] {
 	margin-left: 25px;
 }
 
-ul.post-meta {
-	margin-bottom: 1.2rem;
-	font-weight: 400;
-}
-
 .post-content h2 a {
 	color: #444;
 	font-weight: 400;
@@ -1078,19 +1079,19 @@ ul.post-meta {
   -o-transition: all 0.2s ease-in-out;
 }
 
-.post-content p {
-	font-weight: 400;
-  margin-bottom: 1rem;
-  padding-right: 0.5rem;
-}
-
 .post-content p.autor { text-align: right; }
 
-ul.post-meta li {
+.tresc ul.post-meta {
+	margin-left: 0;
+	margin-bottom: 0.5rem;
+	font-weight: 400;
+}
+
+.tresc ul.post-meta li {
 	display: inline-block;
 }
 
-ul.post-meta li, ul.post-meta li a {
+.tresc ul.post-meta li, ul.post-meta li a {
 	color: #666;
 	transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -1271,10 +1272,11 @@ ul.footer-nav li a:hover {
 
 #content .tresc { padding-bottom: 20px; }
 .tresc h2 { margin-top: 20px; margin-bottom: 20px; }
+.tresc .post-content h2 {margin-bottom: 0;}
 .tresc h3 { margin-top: 20px; margin-bottom: 10px; }
 .tresc ol { list-style-type: decimal; line-height: 1.5em; font-weight: 400; }
 .tresc ul { list-style-type: disc; margin-left: 35px; margin-bottom: 20px; font-size: 1rem; line-height: 1.5em; font-weight: 400; }
-.tresc p { margin: 0 10px 10px 10px; font-size: 16px; line-height: 1.5em; font-weight: 400; }
+.tresc p { margin: 0 0.8rem 0.8rem 0; font-weight: 400; }
 .tresc .img-right { float: right; margin-left: 15px; margin-bottom: 10px; }
 .tresc .img-left { float: left; margin-right: 15px; margin-bottom: 10px; }
 .h2-clear-right { clear: right; padding-top: 10px; border-top: 1px solid #ccc; }
