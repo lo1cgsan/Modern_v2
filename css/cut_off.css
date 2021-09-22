@@ -2759,6 +2759,9 @@ a.main-button i {
 }
  */
 
+.tresc ul.search-results { list-style-type: none; }
+ul.search-results li.search-entry { margin-bottom: 1.5rem; }
+ul.search-results li.search-entry .search-entry-excerpt { margin-left: 55px; }
 
 /* From lo1cg.css */
 #container { background-color: #fff; }
