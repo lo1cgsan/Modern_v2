@@ -9,7 +9,7 @@
 		margin-top: 25px;
 		font-size: 16px;
 	}
-	.latest-posts-classic .post-row { min-height: 140px !important; }
+	.latest-posts-classic .post-row { min-height: 130px !important; }
 }
 
 @media (max-width: 991px) {
