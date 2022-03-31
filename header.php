@@ -41,7 +41,7 @@
   <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/css/red.css" media="screen" />
 
   <link rel="icon" type="image/png" href="<?php get_theme_url(); ?>/images/favicon.png">
-
+  <script type="text/javascript" src="<?php get_theme_url(); ?>/assets/js/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
   <script>
