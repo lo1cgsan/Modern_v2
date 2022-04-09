@@ -6,46 +6,37 @@
 * @Action:    Modern Theme for the GetSimple 3.x
 *
 *****************************************************/
+$lo1_path = "http://lo1.sandomierz.pl/";
+$popularne = array(
+  array("Rekrutacja", "$lo1_path/rekrutacja", "research.png"),
+  array("Turniej tenisa stołowego", "https://sites.google.com/lo1.sandomierz.pl/wiosenny-turniej-tt/", "table-tennis.png"),
+  array("Turniej badmintona", "https://sites.google.com/lo1.sandomierz.pl/turniejbadm/", "badminton.png"),
+  array("Plan lekcji", "$lo1_path/plany/ostatni/index.html", "agenda-1.png"),
+  array("E-dziennik", "$lo1_path/e-dziennik", "technology.png"),
+  array("Google Workspace", "$lo1_path/gsuite", "google.png"),
+  array("Archiwum", "$lo1_path/cgarch", "monuments.png")
+);
 ?>    <div class="widget widget-popular-posts d-none d-md-block">
         <h4>Na skróty<span class="head-line"></span></h4>
         <ul>
+<?php
+  foreach ($popularne as $wpis) {
+    $ikona = '<a href="'.$wpis[1].'"><img src="'.get_theme_url(false).'/icons/'.$wpis[2].'" alt="" /></a>';
+    $link = '<a href="'.$wpis[1].'">'.$wpis[0].'</a>';
+?>
           <li>
             <div class="widget-thumb">
-              <a href="http://lo1.sandomierz.pl/plany/ostatni/index.html"><img src="<?php get_theme_url(); ?>/icons/agenda-1.png" alt="" /></a>
+<?php echo $ikona; ?>
             </div>
             <div class="widget-content">
-              <h5><a href="http://lo1.sandomierz.pl/planlekcji">Plan lekcji</a></h5>
-              <!-- <span>29 Lipiec, 2016</span> -->
-            </div>
+              <h5>
+<?php echo $link; ?>
+              </h5>
+              </div>
             <div class="clearfix"></div>
           </li>
-          <li>
-            <div class="widget-thumb">
-              <a href="http://lo1.sandomierz.pl/e-dziennik"><img src="<?php get_theme_url(); ?>/icons/technology.png" alt="" /></a>
-            </div>
-            <div class="widget-content">
-              <h5><a href="http://lo1.sandomierz.pl/e-dziennik">E-dziennik</a></h5>
-              <!-- <span>29 Lipiec, 2016</span> -->
-            </div>
-            <div class="clearfix"></div>
-          </li>
-          <li>
-            <div class="widget-thumb">
-              <a href="http://lo1.sandomierz.pl/gsuite"><img src="<?php get_theme_url(); ?>/icons/google.png" alt="" /></a>
-            </div>
-            <div class="widget-content">
-              <h5><a href="http://lo1.sandomierz.pl/gsuite">Google Workspace</a></h5>
-            </div>
-            <div class="clearfix"></div>
-          </li>
-          <li>
-            <div class="widget-thumb">
-              <a href="http://lo1.sandomierz.pl/cgarch"><img src="<?php get_theme_url(); ?>/icons/monuments.png" alt="" /></a>
-            </div>
-            <div class="widget-content">
-              <h5><a href="http://lo1.sandomierz.pl/cgarch">Archiwum</a></h5>
-            </div>
-            <div class="clearfix"></div>
-          </li>
+<?php
+  }
+?>
         </ul>
       </div>
