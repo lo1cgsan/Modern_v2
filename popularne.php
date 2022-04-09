@@ -6,7 +6,7 @@
 * @Action:    Modern Theme for the GetSimple 3.x
 *
 *****************************************************/
-$lo1_path = "http://lo1.sandomierz.pl/";
+$lo1_path = "http://lo1.sandomierz.pl";
 $popularne = array(
   array("Rekrutacja", "$lo1_path/rekrutacja", "research.png"),
   array("Turniej tenisa stołowego", "https://sites.google.com/lo1.sandomierz.pl/wiosenny-turniej-tt/", "table-tennis.png"),
