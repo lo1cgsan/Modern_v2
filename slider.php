@@ -6,19 +6,27 @@
 * @Action:    Modern Theme for the GetSimple 3.x
 *
 *****************************************************/
+$dane = get_dane('slajder.xml');
+$ileImg = count($dane);
 ?>
 
   <div id="main-slide" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-bs-target="#main-slide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slajd 1"></li>
-      <li data-bs-target="#main-slide" data-bs-slide-to="1" aria-label="Slajd 2"></li>
-      <li data-bs-target="#main-slide" data-bs-slide-to="2" aria-label="Slajd 3"></li>
-    </ol>
+<?php
+  if ($ileImg > 1) {
+    for($i=0; $i<$ileImg; $i++) {
+      echo('<ol class="carousel-indicators">');
+      echo('<li data-bs-target="#main-slide" data-bs-slide-to="'.$i.'"');
+      if ($i == 0)
+        echo(' class="active" aria-current="true"');
+      echo(' aria-label="Slajd '.($i+1).'"></li>');
+      echo('</ol>');
+    }
+  }
+?>
 
     <div class="carousel-inner">
 
 <?php
-$dane = get_dane('slajder.xml');
 foreach ($dane as $i => $img) {
   echo '<div class="carousel-item';
   if ($i==0) echo ' active';
@@ -29,13 +37,17 @@ foreach ($dane as $i => $img) {
   echo '<p class="animated4"><a href="'.get_site_url(false).$img['link'].'" class="slider btn btn-system btn-large">Zobacz</a></p>';
   echo '</div><!-- /slider-content --></div><!-- /carousel-item -->';
 }
-?>
 
+if ($ileImg > 1) {
+?>
     <button class="carousel-control-prev left" data-bs-target="#main-slide" data-bs-slide="prev" aria-label="Poprzedni">
       <span><i class="fa fa-angle-left" aria-hidden="true"></i></span>
     </button>
     <button class="carousel-control-next right" data-bs-target="#main-slide" data-bs-slide="next" aria-label="Następny">
       <span><i class="fa fa-angle-right"></i></span>
     </button>
+<?php
+}
+?>
   </div>
 </div>
