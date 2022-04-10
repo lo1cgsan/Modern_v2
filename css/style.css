@@ -306,7 +306,7 @@ p strong {
   padding-bottom: 15px;
 }
 .faq .faq-highlight {
-  background: #78339b
+  background: #78339b;
   color: #FFF;
   padding: 0px 5px;
   border-radius: 3px;
@@ -960,9 +960,6 @@ input[type="submit"] {
 
 
 /*************** Alerts ***************/
-
-.alert {
-}
 
 .alert-success p {
 	color: #468847;
