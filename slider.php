@@ -12,16 +12,17 @@ $ileImg = count($dane);
 
   <div id="main-slide" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
 <?php
-  if ($ileImg > 1) {
-    echo('<ol class="carousel-indicators">');
-    for($i=0; $i<$ileImg; $i++) {
-      echo('<li data-bs-target="#main-slide" data-bs-slide-to="'.$i.'"');
-      if ($i == 0)
-        echo(' class="active" aria-current="true"');
-      echo(' aria-label="Slajd '.($i+1).'"></li>');
-    }
-    echo('</ol>');
-  }
+  // position should be adjusted in responsive.css
+  // if ($ileImg > 1) {
+  //   echo('<ol class="carousel-indicators">');
+  //   for($i=0; $i<$ileImg; $i++) {
+  //     echo('<li data-bs-target="#main-slide" data-bs-slide-to="'.$i.'"');
+  //     if ($i == 0)
+  //       echo(' class="active" aria-current="true"');
+  //     echo(' aria-label="Slajd '.($i+1).'"></li>');
+  //   }
+  //   echo('</ol>');
+  // }
 ?>
 
     <div class="carousel-inner">
