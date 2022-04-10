@@ -31,7 +31,7 @@ get_i18n_search_results(array('tags'=>'news202122','addTags'=>$addTags,'words'=>
       </div><!-- end/row latest-posts-classic -->
     </div><!-- end/col-md-9 -->
 
-      <!-- panel boczny, znika przy szerokosci < ok 900px -->
+      <!-- panel boczny, znika przy szerokości < ok 900px -->
       <div class="col-md-3 sidebar right-sidebar">
         <div class="d-none d-md-block">
           <?php include("searchform.php"); ?>
