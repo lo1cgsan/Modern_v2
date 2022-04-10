@@ -479,9 +479,10 @@ input[type="submit"] {
 }
 
 #main-slide .slider-content h2{
-	font-size: 76px;
+	font-size: 4rem;
 	text-transform: uppercase;
-  color: #555;
+  	color: #555;
+	margin-bottom: 4rem;
 }
 
 #main-slide .slider-content h3{
