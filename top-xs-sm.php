@@ -21,8 +21,10 @@
       <div class="text-center mt-3">
 <?php
   $dane = get_dane('top-xs-sm.xml');
-  foreach ($dane as $i) {
-    echo('<a class="btn-system btn-mini" href="'.get_site_url(false).$i['link'].'">'.$i['title'].'</a>');
+  if (!empty($dane)) {
+    foreach ($dane as $i) {
+      echo('<a class="btn-system btn-mini" href="'.get_site_url(false).$i['link'].'">'.$i['title'].'</a>');
+    }
   }
 ?>
       </div>

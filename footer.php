@@ -21,7 +21,7 @@
 $podstrony = array(
   array('http://lo1.sandomierz.pl/biblio', 'Szkolna biblioteka', 'Szkolna biblioteka zaprasza!', 'Kultura'),
   array('http://lo1.sandomierz.pl/wfman', 'WF-Man – aktualności sportowe', 'Sportowe osiągnięcia i aktualności.', 'Sport'),
-  array('http://lo1.sandomierz.pl/eko', 'Działalność ekologiczna', 'Działalność ekologiczna.', 'Ekologia'),
+  array('http://lo1.sandomierz.pl/eko', 'Działalność ekologiczna (archiwum)', 'Działalność ekologiczna.', 'Ekologia'),
   array('http://lo1.sandomierz.pl/informatyka', 'E-kompetencje', 'Co każdy o komputerze powinien wiedzieć.', 'Informatyka'),
   array('http://confraternitas.pl', 'Confraternitas Gostomianum – absolwenci', 'Strona społeczności absolwentów.', 'Szkoła')
 );

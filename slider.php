@@ -7,7 +7,9 @@
 *
 *****************************************************/
 $dane = get_dane('slajder.xml');
-$ileImg = count($dane);
+$ileImg = 0;
+if (!empty($dane)) $ileImg = count($dane);
+else $dane = array();
 ?>
 
   <div id="main-slide" class="carousel slide d-none d-md-block" data-bs-ride="carousel">

@@ -6,11 +6,9 @@
 * @Action:    Modern Theme for the GetSimple 3.x
 *
 *****************************************************/
+// $lo1_path = get_site_url($echo=false);
 $lo1_path = "http://lo1.sandomierz.pl";
 $popularne = array(
-  array("Rekrutacja", "$lo1_path/rekrutacja", "research.png"),
-  array("Turniej tenisa stołowego", "https://sites.google.com/lo1.sandomierz.pl/wiosenny-turniej-tt/", "table-tennis.png"),
-  array("Turniej badmintona", "https://sites.google.com/lo1.sandomierz.pl/turniejbadm/", "badminton.png"),
   array("Plan lekcji", "$lo1_path/plany/ostatni/index.html", "agenda-1.png"),
   array("E-dziennik", "$lo1_path/e-dziennik", "technology.png"),
   array("Google Workspace", "$lo1_path/gsuite", "google.png"),
