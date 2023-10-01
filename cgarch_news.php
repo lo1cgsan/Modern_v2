@@ -19,9 +19,9 @@
   <div class="container ">
     <div class="row">
     <div class="col-md-9">
-    <div class="hr1" style="margin-bottom:15px;"></div>
+    <!-- <div class="hr1" style="margin-bottom:15px;"></div> -->
         <div class="row latest-posts-classic">
-        <h1 class="classic-title"><span><?php get_page_title(); ?></span></h1>
+        <!-- <h1 class="classic-title"><span><?php get_page_title(); ?></span></h1> -->
 <?php
     get_page_content();
 ?>
@@ -33,7 +33,6 @@
     <div class="col-md-3 sidebar right-sidebar">
       <div class="d-none d-md-block">
         <?php include("searchform.php"); ?>
-        <?php include("kategorie.php"); ?>
       </div>
       <?php include("popularne.php") ?>
     </div><!-- end/sidebar -->

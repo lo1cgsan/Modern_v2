@@ -108,9 +108,11 @@ function getMenu($slug) {
 function getSubmenu2($minlevel=2, $maxlevel=2) {
 	$submenu = return_i18n_menu_data(return_page_slug(), $minlevel, $maxlevel, $show=I18N_SHOW_PAGES);
 	$menu_str='<div class="btn-group flex-wrap" role="group" aria-label="Absolwenci alfabetycznie i rocznikami">';
-	foreach($submenu as $strona) {
-		$menu_str .= '<a class="btn-system btn-medium border-btn" href="'.$strona['url'].'" title="'.$strona['title'].'">'.$strona['menu'].'</a>
-		';
+	if (!empty($submenu)) {
+		foreach($submenu as $strona) {
+			$menu_str .= '<a class="btn-system btn-medium border-btn" href="'.$strona['url'].'" title="'.$strona['title'].'">'.$strona['menu'].'</a>
+			';
+		}
 	}
 	$menu_str .= '</div>';
 	return $menu_str;

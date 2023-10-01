@@ -34,7 +34,6 @@
     <div class="col-md-3 sidebar right-sidebar">
       <div class="d-none d-md-block">
         <?php include("searchform.php"); ?>
-        <?php include("kategorie.php"); ?>
       </div>
       <?php include("popularne.php") ?>
     </div><!-- end/sidebar -->
