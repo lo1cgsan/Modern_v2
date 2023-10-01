@@ -31,7 +31,17 @@
           <div class="col-3">
             <ul class="d-flex justify-content-end">
               <li>
+<?php
+  if (str_contains(get_site_url(false), 'cgarch')) {
+?>
+                <a href="<?php echo(substr(get_site_url(false), 0, -7)); ?>"><i class="fa fa-university"></i><span class="d-none d-sm-inline-flex">&nbsp;Strona główna</span></a>
+<?php
+  } else {
+?>
                 <a href="<?php get_site_url(); ?>cgarch"><i class="fa fa-archive"></i><span class="d-none d-sm-inline-flex">&nbsp;Archiwum</span></a>
+<?php
+  }
+?>
               </li>
               <li>&nbsp;&nbsp;<img src="<?php get_theme_url(); ?>/images/godlo.png" alt="Godło Rezczpospolitej" width="20" height="20"></li>
             </ul>
@@ -65,7 +75,5 @@
         </div>
     </div>
   </nav>
-
-  <?php //include("top-xs-sm.php"); ?>
 
   </header>

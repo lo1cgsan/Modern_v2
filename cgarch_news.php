@@ -24,7 +24,6 @@
         <h1 class="classic-title"><span><?php get_page_title(); ?></span></h1>
 <?php
     get_page_content();
-    echo(return_page_slug());
 ?>
 
     </div><!-- end/row latest-posts-classic -->
