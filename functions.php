@@ -35,7 +35,7 @@ function show_lastUpdate() {
 	foreach ($tb as $l => $t) {
 		echo '<li><a href="';
 		get_site_url();
-		echo '?id='.$t[1].'">'.$t[2].'</a><br />['.$t[0].']</li>';
+		echo '?id='.$t[1].'">'.$t[2].'</a>&nbsp;['.$t[0].']</li>';
 	}
 	echo '</ul>';
 }

@@ -23,10 +23,13 @@
         <h1 class="classic-title"><span><?php get_page_title(); ?></span></h1>
 <?php
 $addTags='';
-if (isset($_GET['addTags']))
+if (isset($_GET['addTags'])) {
   $addTags = trim($_GET['addTags']);
-get_i18n_search_results(array('tags'=>'news202324','addTags'=>$addTags,'words'=>'','max'=>10,'numWords'=>15,'HEADER'=>null, 'live'=>0, 'ajax'=>0, 'showPaging'=>1));
-//get_page_content();
+  echo(return_page_slug(false));
+  get_i18n_search_results(array('tags'=>'news202324','addTags'=>$addTags,'words'=>'','max'=>10,'numWords'=>15,'HEADER'=>null, 'live'=>0, 'ajax'=>0, 'showPaging'=>1));
+} else {
+  get_page_content();
+}
 ?>
       </div><!-- end/row latest-posts-classic -->
     </div><!-- end/col-md-9 -->
