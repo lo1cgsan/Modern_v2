@@ -27,7 +27,6 @@
     <div class="col-md-3 sidebar right-sidebar">
       <div class="d-none d-md-block">
         <?php include("searchform.php"); ?>
-        <?php include("kategorie.php"); ?>
       </div>
       <?php include("popularne.php") ?>
     </div><!-- end/sidebar -->
@@ -39,9 +38,5 @@
 
 <?php include("footer.php"); ?>
 
-  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
-  <script type="text/javascript" src="<?php get_theme_url(); ?>/assets/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="<?php get_theme_url(); ?>/assets/js/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="<?php get_theme_url(); ?>/js/script.js"></script>
 </body>
 </html>

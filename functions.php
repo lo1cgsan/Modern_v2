@@ -78,19 +78,23 @@ $miesiace = array(
 );
 
 $kategorie = array(
-  'szkola' => array('Szkoła', 'fa-building'),
-  'uczniowie' => array('Uczniowie', 'fa-graduation-cap'),
-  'nauczyciele' => array('Nauczyciele', 'fa-building'),
-  'ekologia' => array('Ekologia', 'fa-tree'),
-  'sport' => array('Sport', 'fa-futbol-o'),
-  'kultura' => array('Kultura', 'fa-institution'),
-  'nauka' => array('Nauka', 'fa-book'),
-  'historia' => array('Historia', 'fa-history'),
-  'pomagamy' => array('Pomagamy', 'fa-heart'),
-  'sukces' => array('Sukcesy', 'fa-trophy'),
-  'informatyka' => array('Informatyka', 'fa-laptop'),
-  'informacja' => array('Informacja', 'fa-info')
+	'informacja' => array('Informacja', 'fa-info'),
+	'szkola' => array('Szkoła', 'fa-building'),
+	'uczniowie' => array('Uczniowie', 'fa-graduation-cap'),
+	'nauczyciele' => array('Nauczyciele', 'fa-building'),
+	'kultura' => array('Kultura', 'fa-institution'),
+	'nauka' => array('Nauka', 'fa-book'),
+	'ekologia' => array('Ekologia', 'fa-tree'),
+	'sport' => array('Sport', 'fa-futbol-o'),
+	'historia' => array('Historia', 'fa-history'),
+	'pomagamy' => array('Pomagamy', 'fa-heart'),
+	'sukces' => array('Sukcesy', 'fa-trophy'),
+	'informatyka' => array('Informatyka', 'fa-laptop')
 );
+
+//define('CGARCH', FALSE);
+if (str_contains(get_site_url(false), 'cgarch/'))
+	define('CGARCH', TRUE);
 
 function getMenu($slug) {
 	$menu = return_i18n_menu_data($slug, $minlevel=0, $maxlevel=0, $show=I18N_SHOW_NORMAL);
@@ -107,7 +111,7 @@ function getMenu($slug) {
 
 function getSubmenu2($minlevel=2, $maxlevel=2) {
 	$submenu = return_i18n_menu_data(return_page_slug(), $minlevel, $maxlevel, $show=I18N_SHOW_PAGES);
-	$menu_str='<div class="btn-group flex-wrap" role="group" aria-label="Absolwenci alfabetycznie i rocznikami">';
+	$menu_str='<div class="btn-group flex-wrap" role="group" aria-label="Roczniki">';
 	if (!empty($submenu)) {
 		foreach($submenu as $strona) {
 			$menu_str .= '<a class="btn-system btn-medium border-btn" href="'.$strona['url'].'" title="'.$strona['title'].'">'.$strona['menu'].'</a>

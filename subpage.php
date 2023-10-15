@@ -47,7 +47,7 @@ foreach($submenu as $strona) {
     <div class="col-sm-12 col-md-3 sidebar right-sidebar">
       <div class="d-none d-md-block">
         <?php include("searchform.php"); ?>
-        <?php include("kategorie.php"); ?>
+        <?php //include("kategorie.php"); ?>
       </div>
       <?php include("popularne.php") ?>
     </div><!-- end/sidebar -->

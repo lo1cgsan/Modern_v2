@@ -25,7 +25,6 @@
 $addTags='';
 if (isset($_GET['addTags'])) {
   $addTags = trim($_GET['addTags']);
-  echo(return_page_slug(false));
   get_i18n_search_results(array('tags'=>'news202324','addTags'=>$addTags,'words'=>'','max'=>10,'numWords'=>15,'HEADER'=>null, 'live'=>0, 'ajax'=>0, 'showPaging'=>1));
 } else {
   get_page_content();

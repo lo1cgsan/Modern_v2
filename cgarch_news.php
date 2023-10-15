@@ -23,7 +23,13 @@
         <div class="row latest-posts-classic">
         <!-- <h1 class="classic-title"><span><?php get_page_title(); ?></span></h1> -->
 <?php
-    get_page_content();
+$addTags='';
+if (isset($_GET['addTags'])) {
+  $addTags = trim($_GET['addTags']);
+  get_i18n_search_results(array('tags'=>return_page_slug(),'addTags'=>$addTags,'words'=>'','max'=>10,'numWords'=>15,'HEADER'=>null, 'live'=>0, 'ajax'=>0, 'showPaging'=>1));
+} else {
+  get_page_content();
+}
 ?>
 
     </div><!-- end/row latest-posts-classic -->
@@ -34,6 +40,7 @@
       <div class="d-none d-md-block">
         <?php include("searchform.php"); ?>
       </div>
+      <?php include("kategorie_arch.php"); ?>
       <?php include("popularne.php") ?>
     </div><!-- end/sidebar -->
 
@@ -44,9 +51,5 @@
 
 <?php include("footer.php"); ?>
 
-  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
-  <script type="text/javascript" src="<?php get_theme_url(); ?>/assets/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="<?php get_theme_url(); ?>/assets/js/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="<?php get_theme_url(); ?>/js/script.js"></script>
 </body>
 </html>

@@ -41,8 +41,8 @@
   <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/css/red.css" media="screen" />
 
   <link rel="icon" type="image/png" href="<?php get_theme_url(); ?>/images/favicon.png">
-  <script type="text/javascript" src="<?php get_theme_url(); ?>/assets/js/jquery-3.6.0.min.js"></script>
-  <!-- <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/assets/css/cookieconsent.min.css" />
+  <script type="text/javascript" src="<?php get_theme_url(); ?>/assets/js/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/assets/css/cookieconsent.min.css" />
   <script src="<?php get_theme_url(); ?>/assets/css/cookieconsent.min.js"></script>
   <script>
   window.addEventListener("load", function(){
@@ -60,16 +60,16 @@
       "message": "Używamy plików cookie (ciasteczek), aby strony działały lepiej. Nie zbieramy żadnych danych pozwalających identyfikować użytkownika.",
       "dismiss": "Rozumiem",
       "link": "Więcej informacji »»»",
-      "href": "http://wszystkoociasteczkach.pl"
+      "href": "https://wszystkoociasteczkach.pl"
     }
   })});
-  </script> -->
+  </script>
 
-  <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if IE 8]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
   <?php get_header(); ?>
-  <?php get_GA(); ?>
+  <?php //get_GA(); ?>
 </head>
 
 <body id="<?php get_page_slug(); ?>">
@@ -81,9 +81,9 @@
 <!--[if lte IE 8]>
   <div>
     <p>Używasz przeglądarki Internet Explorer 6 lub 7, które ze względu na podatność na ataki złośliwego oprogramowania zostały wycofane.<br />
-    Zainstaluj IE w wersji 8 lub wyższej <a rel="nofollow" href="http://windows.microsoft.com/ie9">9</a>, albo wypróbuj lepsze programy:
-    <a rel="nofollow" href="http://www.firefox.pl/">Mozilla Firefox</a>,
-    <a rel="nofollow" href="http://www.google.com/chrome/">Google Chrome</a>.
+    Zainstaluj IE w wersji 8 lub wyższej, albo wypróbuj lepsze programy:
+    <a rel="nofollow" href="https://www.mozilla.org/pl/">Mozilla Firefox</a>,
+    <a rel="nofollow" href="https://brave.com/pl/">Brave Browser</a>.
     </p>
   </div>
 <![endif]-->

@@ -16,7 +16,7 @@ foreach ($dane as $i => $img) {
     $imgbig = $imgname.'.jpg';
   else
     $imgbig = $imgname.'.png';
-  $imgpath = get_site_url(false).'data/uploads/dyplomy/'.$imgbig;
+  $imgpath = str_replace('cgarch/', '', get_site_url(false)).'data/uploads/dyplomy/'.$imgbig;
   echo '<div class="cert-item">';
   echo '<a href="'.$imgpath.'"><img src="'.$img['img'].'" alt="'.$img['title'].'" /></a>';
   echo '</div>';

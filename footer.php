@@ -64,7 +64,18 @@ foreach($podstrony as $k => $v) {
         </div>
         <div class="col-md-3">
           <ul class="footer-nav">
-            <li><a href="<?php get_site_url() ?>cgarch"><i class="fa fa-archive"></i> Archiwum</a></li>
+            <li>
+<?php
+  if (str_contains(get_site_url(false), 'cgarch')) {
+?>
+  <a href="<?php echo(substr(get_site_url(false), 0, -7)); ?>"><i class="fa fa-university"></i> Strona główna</a></li>
+<?php
+  } else {
+?>
+  <a href="<?php get_site_url() ?>cgarch"><i class="fa fa-archive"></i> Archiwum</a></li>
+<?php
+  }
+?>
           </ul>
         </div>
       </div>

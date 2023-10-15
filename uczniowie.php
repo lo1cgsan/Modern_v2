@@ -89,8 +89,6 @@ foreach ($pliki as $nr => $plik) {
 
 <?php include("searchform.php"); ?>
 
-<?php include("kategorie.php"); ?>
-
 <?php include("popularne.php") ?>
 
     </div><!-- end/sidebar -->

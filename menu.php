@@ -34,11 +34,11 @@
 <?php
   if (str_contains(get_site_url(false), 'cgarch')) {
 ?>
-                <a href="<?php echo(substr(get_site_url(false), 0, -7)); ?>"><i class="fa fa-university"></i><span class="d-none d-sm-inline-flex">&nbsp;Strona główna</span></a>
+  <a href="<?php echo(substr(get_site_url(false), 0, -7)); ?>"><i class="fa fa-university"></i><span class="d-none d-sm-inline-flex">&nbsp;Strona główna</span></a>
 <?php
   } else {
 ?>
-                <a href="<?php get_site_url(); ?>cgarch"><i class="fa fa-archive"></i><span class="d-none d-sm-inline-flex">&nbsp;Archiwum</span></a>
+  <a href="<?php get_site_url(); ?>cgarch"><i class="fa fa-archive"></i><span class="d-none d-sm-inline-flex">&nbsp;Archiwum</span></a>
 <?php
   }
 ?>
