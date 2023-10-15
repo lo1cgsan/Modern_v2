@@ -43,7 +43,7 @@
   <link rel="icon" type="image/png" href="<?php get_theme_url(); ?>/images/favicon.png">
   <script type="text/javascript" src="<?php get_theme_url(); ?>/assets/js/jquery-3.7.1.min.js"></script>
   <link rel="stylesheet" type="text/css" href="<?php get_theme_url(); ?>/assets/css/cookieconsent.min.css" />
-  <script src="<?php get_theme_url(); ?>/assets/css/cookieconsent.min.js"></script>
+  <script src="<?php get_theme_url(); ?>/assets/js/cookieconsent.min.js"></script>
   <script>
   window.addEventListener("load", function(){
   window.cookieconsent.initialise({
